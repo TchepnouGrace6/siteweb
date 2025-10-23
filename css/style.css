@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero{
@@ -28,7 +29,7 @@
     justify-content: space-between;
 }
 
-button{
+button {
     color: #fbfcfd;
     padding: 10px 25px;
     background: transparent;
@@ -38,9 +39,16 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+    color: black;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+
 .content{
     color: #fbfcfd;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
@@ -158,3 +166,52 @@ h1{
     animation-delay: 6s;  
     width: 35px;  
 }
+
+
+/***** CSS CONTACT FORM *****/
+
+.create-account{
+    margin-left: 50px;
+}
+
+.sign-up{
+    background: linear-gradient(0, 0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.89);
+    padding: 4rem;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    left: 43%;
+    transform: translateX(-50%);
+    margin-bottom: 80%;
+    bottom: 60px;
+    backdrop-filter: blur(10px);
+}
+
+.sign-up2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid hsla(210, 1%, 27%, 0);
+    border-radius: 5px;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+    background-color: hsla(0, 0%, 100%, 0.6);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5); /* Ajustez l'opacité pour un rendu plus subtil */
+}
+
+
+.submit{
+    margin-top: 25px;
+    margin-bottom: -7px;
+}
+
