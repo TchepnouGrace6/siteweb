@@ -113,6 +113,11 @@ h1{
     bottom: -70px;
 }
 
+img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
 @keyframes bubble{
     0%{
         transform: translateY(0);
@@ -135,28 +140,30 @@ h1{
     width: 25px;    
 }
 .bubbles img:nth-child(2){
-    animation-delay: 1s;    
+    animation-delay: 1s; 
+    width: 60x;   
 }
 .bubbles img:nth-child(3){
     animation-delay: 3s;  
     width: 15px;  
 }
 .bubbles img:nth-child(4){
-    animation-delay: 4.5s;  
+    animation-delay: 9s;  
     width: 30px;  
 }
 .bubbles img:nth-child(5){
     animation-delay: 4s; 
 }
 .bubbles img:nth-child(6){
-    animation-delay: 3s;    
+    animation-delay: 3s;
+    width: 50px;    
 }
 .bubbles img:nth-child(7){
     animation-delay: 6s;
     width: 20px;    
 }
 .bubbles img:nth-child(8){
-    animation-delay: 5s;    
+    animation-delay: 5.5s;    
 }
 .bubbles img:nth-child(9){
     width: 10px;
@@ -177,7 +184,7 @@ h1{
 .sign-up{
     background: linear-gradient(0, 0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.89);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.582);
     padding: 4rem;
     width: 100%;
     max-width: 700px;
@@ -186,7 +193,7 @@ h1{
     transform: translateX(-50%);
     margin-bottom: 80%;
     bottom: 60px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 
 .sign-up2{
