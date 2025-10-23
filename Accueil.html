@@ -20,15 +20,31 @@
         </div>
 
         <div class="side-bar">
-            <img src="Images/menu.png" class="menu" alt="">
+            <img src="Images/menu.png" class="menu">
             <div class="social-link">
                 <img src="Images/fb.png">
                 <img src="Images/tw.png">
                 <img src="Images/ig.png">
             </div>
                <div class="useful-link">
-                <img src="Images/info.png">
-                <img src="Images/share.png">
+                <a href="A_propos.html">
+                    <img src="Images/info.png">
+                </a>
+                <!-- <img src="Images/share.png"> -->
+                <div class="share-container">
+                    <img src="Images/share.png" alt="Partager" onclick="toggleShareMenu()" style="cursor:pointer;">
+                    <div id="shareMenu" style="display:none; position:absolute; bottom:60px; right:60px; background:#fff; padding:10px; border-radius:10px;">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/fb.png" alt="Partager sur Facebook" style="width:25px; margin:5px;">
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="Images/tw.png" alt="Partager sur Twitter" style="width:25px; margin:5px;">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="Images/ig.png" alt="Partager sur Instagram" style="width:25px; margin:5px;">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
