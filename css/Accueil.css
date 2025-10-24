@@ -474,7 +474,11 @@
     transform: translateY(0);
 }
 
-/* Pour faire apparaître le texte après un petit délai */
 .fade-in-on-scroll.delay {
     transition-delay: 0.4s;
 }
+
+/*Apprends à commenter le code, c'est plus professionnel 
+étant donné que les commentaires sont essentiels pour comprendre le code.*/
+
+
