@@ -13,7 +13,7 @@
             });
         });
 
-        // Smooth Scrolling
+       
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -28,7 +28,7 @@
         });
 
         
-    // Effet d’apparition au défilement
+   
     const elements = document.querySelectorAll('.fade-in-on-scroll');
 
     function handleScroll() {

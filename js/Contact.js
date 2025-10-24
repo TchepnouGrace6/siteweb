@@ -1,4 +1,4 @@
-// Menu Toggle pour mobile
+
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -6,14 +6,14 @@ menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Fermer le menu au clic sur un lien
+
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
     });
 });
 
-// Smooth Scrolling
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -27,7 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Effet d'apparition au défilement
+
 const elements = document.querySelectorAll('.fade-in-on-scroll');
 
 const observerOptions = {
@@ -47,14 +47,14 @@ elements.forEach(el => {
     observer.observe(el);
 });
 
-// Gestion du formulaire de contact
+
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Récupérer les valeurs du formulaire
+   
     const formData = {
         nom: document.getElementById('nom').value,
         email: document.getElementById('email').value,
@@ -64,66 +64,46 @@ contactForm.addEventListener('submit', function(e) {
         message: document.getElementById('message').value
     };
     
-    // Validation basique
+   
     if (!formData.nom || !formData.email || !formData.sujet || !formData.message) {
         showMessage('Veuillez remplir tous les champs obligatoires.', 'error');
         return;
     }
     
-    // Validation de l'email
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
         showMessage('Veuillez entrer une adresse email valide.', 'error');
         return;
     }
     
-    // Simuler l'envoi du formulaire
-    // Dans un cas réel, vous enverriez les données à un serveur
+   
     submitForm(formData);
 });
 
 function submitForm(data) {
-    // Désactiver le bouton pendant l'envoi
+   
     const submitButton = contactForm.querySelector('.submit-button');
     const originalText = submitButton.innerHTML;
     submitButton.disabled = true;
     submitButton.innerHTML = '<span>Envoi en cours...</span> ⏳';
     
-    // Simuler un délai d'envoi
+    
     setTimeout(() => {
-        // Afficher le message de succès
+        
         showMessage('Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.', 'success');
         
-        // Réinitialiser le formulaire
+        
         contactForm.reset();
         
-        // Réactiver le bouton
+        
         submitButton.disabled = false;
         submitButton.innerHTML = originalText;
         
-        // Logger les données (pour démonstration)
+       
         console.log('Données du formulaire:', data);
         
-        // Dans un cas réel, vous utiliseriez fetch() ou XMLHttpRequest
-        // pour envoyer les données à votre serveur
-        /*
-        fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(data => {
-            showMessage('Message envoyé avec succès!', 'success');
-            contactForm.reset();
-        })
-        .catch(error => {
-            showMessage('Erreur lors de l\'envoi. Réessayez plus tard.', 'error');
-        });
-        */
-        
+       
     }, 1500);
 }
 
@@ -132,10 +112,10 @@ function showMessage(message, type) {
     formMessage.className = `form-message ${type}`;
     formMessage.style.display = 'block';
     
-    // Faire défiler jusqu'au message
+    
     formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
-    // Masquer le message après 5 secondes
+    
     setTimeout(() => {
         formMessage.style.display = 'none';
     }, 5000);
