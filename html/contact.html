@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/Contact.css" rel="stylesheet">
+    <title>Contact - Culture Camerounaise</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">🇨🇲</div>
+                <span>Culture Camerounaise</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../html/Accueil.html">Accueil</a></li>
+                <li><a href="../html/A_propos.html">A propos</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Contactez-Nous</h1>
+            <p>Nous sommes à votre écoute pour toute question, suggestion ou collaboration</p>
+        </div>
+    </section>
+
+
+    <section class="contact-intro">
+        <div class="container">
+            <div class="intro-content fade-in-on-scroll">
+                <h2>Entrons en Contact</h2>
+                <p>
+                    Que vous souhaitiez partager des informations sur votre culture, proposer une collaboration, 
+                    ou simplement en savoir plus sur notre projet, nous serons ravis d'échanger avec vous. 
+                    Votre contribution est précieuse pour enrichir ce patrimoine culturel camerounais.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-form-container fade-in-on-scroll">
+                    <h3>Envoyez-nous un Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nom">Nom Complet *</label>
+                            <input type="text" id="nom" name="nom" required placeholder="Votre nom complet">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="culturecamerounaise@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="+237 666 666 666">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Sujet *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="collaboration">Proposition de collaboration</option>
+                                <option value="contribution">Contribution culturelle</option>
+                                <option value="suggestion">Suggestion d'amélioration</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ethnie">Votre Ethnie (optionnel)</label>
+                            <input type="text" id="ethnie" name="ethnie" placeholder="Ex: Bamiléké, Duala, Ewondo...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Envoyer le Message</span>
+                            <span class="button-icon">✉️</span>
+                        </button>
+
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                
+                <div class="contact-info-container">
+                    <div class="contact-info-card fade-in-on-scroll delay">
+                        <div class="info-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>contact@culturecamerounaise.cm</p>
+                    </div>
+
+                    <div class="contact-info-card fade-in-on-scroll delay-1">
+                        <div class="info-icon">📱</div>
+                        <h4>Téléphone</h4>
+                        <p>+237 655 842 992</p>
+                    </div>
+
+                    <div class="contact-info-card fade-in-on-scroll delay-2">
+                        <div class="info-icon">📍</div>
+                        <h4>Localisation</h4>
+                        <p>Douala, Cameroun</p>
+                        
+                    </div>
+
+                    <div class="contact-info-card fade-in-on-scroll delay-3">
+                        <div class="info-icon">⏰</div>
+                        <h4>Horaires</h4>
+                        <p>Lundi - Vendredi</p>
+                        <p>8h00 - 18h00 (GMT+1)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner fade-in-on-scroll">
+                <h2>Rejoignez Notre Communauté</h2>
+                <p>Ensemble, préservons et célébrons la richesse culturelle du Cameroun</p>
+                <div class="cta-buttons">
+                    <a href="#contactForm" class="cta-button primary">Nous Écrire</a>
+                    <a href="Apropos.html" class="cta-button secondary">En Savoir Plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Culture Camerounaise. Fait avec ❤️ pour le Cameroun</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/Contact.js"></script>
+</body>
+</html>
